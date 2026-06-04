@@ -47,6 +47,9 @@ Nós usamos o próprio SDL para criar os conteúdos explicativos deste repositó
      ┣ 📜 spec.md                   <-- Regras de negócio do NDA
      ┣ 📜 compliance.md             <-- Limites legais do NDA
      ┗ 📜 template.txt              <-- Prompt/Output final do NDA
+```
+
+---
 
 ## 🚀 Como Começar? (Para Jovens Advogados)
 Leia os textos na pasta 01-artigos para entender profundamente a mudança de mentalidade (de "redator de textos" para "arquiteto lógico").
