@@ -39,14 +39,14 @@ Nós usamos o próprio SDL para criar os conteúdos explicativos deste repositó
  ┣ 📜 README.md                     <-- Você está aqui (O Manifesto)
  ┣ 📂 01-artigos                    <-- Artigos científicos e tutoriais
  ┃ ┗ 📂 o-que-e-sdl
- ┃   ┣ 📜 spec.md
- ┃   ┣ 📜 constraints.md
- ┃   ┗ 📜 artigo-final.md
+ ┃   ┣ 📜 spec.md                   <-- Lógica do artigo
+ ┃   ┣ 📜 constraints.md            <-- Diretrizes de estilo e formato
+ ┃   ┗ 📜 artigo-final.md           <-- O artigo compilado
  ┗ 📂 02-documentos-juridicos       <-- Modelos de documentos no padrão SDL
    ┗ 📂 nda-simplificado
      ┣ 📜 spec.md                   <-- Regras de negócio do NDA
-     ┣ 📜 compliance.md             <-- Limites legais do NDA
-     ┗ 📜 template.txt              <-- Prompt/Output final do NDA
+     ┣ 📜 compliance.md             <-- Limites legais e fundamentação
+     ┗ 📜 template.txt              <-- Template/Draft final do NDA
 ```
 
 ---

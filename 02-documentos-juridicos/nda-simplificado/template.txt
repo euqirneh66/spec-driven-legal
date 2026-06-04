@@ -1,0 +1,40 @@
+# INSTRUMENTO PARTICULAR DE ACORDO DE CONFIDENCIALIDADE
+
+Pelo presente instrumento, as Partes abaixo qualificadas:
+
+**DIVULGADORA:** {{divulgadora_nome}}, pessoa jurídica/física, inscrita no CNPJ/CPF sob nº {{divulgadora_documento}}.
+**RECEPTORA:** {{receptora_nome}}, pessoa jurídica/física, inscrita no CNPJ/CPF sob nº {{receptora_documento}}.
+
+Decidem celebrar este Acordo de Confidencialidade ("Acordo") mediante as seguintes cláusulas:
+
+**1. OBJETO**
+O presente Acordo visa proteger as informações confidenciais compartilhadas entre as partes para a finalidade de: {{objeto_finalidade}}.
+
+**2. DEFINIÇÃO DE INFORMAÇÃO CONFIDENCIAL**
+Considera-se Informação Confidencial todo e qualquer dado, relatório, documento, segredo de negócio ou know-how, de natureza técnica, comercial ou financeira, revelado pela DIVULGADORA à RECEPTORA.
+
+**3. OBRIGAÇÕES DA RECEPTORA**
+A RECEPTORA obriga-se a manter o mais absoluto sigilo sobre as Informações Confidenciais, não podendo revelá-las a terceiros sem autorização prévia por escrito, utilizando-as exclusivamente para o cumprimento do Objeto deste Acordo.
+
+**4. VIGÊNCIA**
+O dever de confidencialidade permanecerá em vigor pelo prazo de {{prazo_confidencialidade}} após o encerramento das discussões entre as partes.
+
+**5. PENALIDADES**
+O descumprimento de qualquer cláusula deste instrumento sujeitará a RECEPTORA ao pagamento de multa não compensatória no valor de {{multa_valor}}, sem prejuízo da apuração de perdas e danos suplementares.
+
+**6. FORO**
+As partes elegem o foro da Comarca de {{foro_cidade}}, {{foro_estado}}, para dirimir quaisquer dúvidas oriundas deste Acordo.
+
+E, por estarem assim justas e contratadas, assinam o presente instrumento na presença de 02 (duas) testemunhas.
+
+[Local e Data]
+
+__________________________
+**DIVULGADORA**
+
+__________________________
+**RECEPTORA**
+
+**Testemunhas:**
+1. _______________________
+2. _______________________
