@@ -47,3 +47,13 @@ Nós usamos o próprio SDL para criar os conteúdos explicativos deste repositó
      ┣ 📜 spec.md                   <-- Regras de negócio do NDA
      ┣ 📜 compliance.md             <-- Limites legais do NDA
      ┗ 📜 template.txt              <-- Prompt/Output final do NDA
+
+## 🚀 Como Começar? (Para Jovens Advogados)
+Leia os textos na pasta 01-artigos para entender profundamente a mudança de mentalidade (de "redator de textos" para "arquiteto lógico").
+
+Navegue pela pasta 02-documentos-juridicos antes de redigir seu próximo contrato ou petição.
+
+Use nossas specs como guia para entrevistar seus clientes. As perguntas certas geram a especificação certa.
+
+## 🤝 Contribua
+O SDL é um projeto colaborativo e de código aberto. Se você mapeou a matriz lógica de um tipo de contrato específico ou de uma petição inicial, faça um pull request. Vamos padronizar o Direito juntos.
