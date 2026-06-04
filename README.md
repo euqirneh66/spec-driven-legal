@@ -60,3 +60,47 @@ Use nossas specs como guia para entrevistar seus clientes. As perguntas certas g
 
 ## 🤝 Contribua
 O SDL é um projeto colaborativo e de código aberto. Se você mapeou a matriz lógica de um tipo de contrato específico ou de uma petição inicial, faça um pull request. Vamos padronizar o Direito juntos.
+
+## 🚀 Como Usar o Framework na Prática?
+
+O SDL foi desenhado para se adaptar ao ecossistema moderno de Inteligência Artificial. Você pode utilizá-lo de duas formas: o **Modo Agente** (automatizado e recomendado para o dia a dia) ou o **Modo Manual** (via chat comum).
+
+---
+
+### 🤖 Método Avançado: Criando seu "Compilador SDL" (Recomendado)
+
+Em vez de copiar e colar prompts toda vez, você pode encapsular o framework criando uma IA dedicada dentro do **Claude Projects**, **Gemini Gems** ou **Custom GPTs (ChatGPT)**. 
+
+#### 1. Configuração Inicial (Você só faz uma vez):
+1. Crie um novo Projeto/Gem/GPT e batize de **"Compilador SDL"**.
+2. No campo **Instruções de Sistema (System Instructions / Instructions)**, cole o seguinte comando mestre:
+
+> "Você é o Compilador Oficial do framework Spec-Driven Legal (SDL). Seu único papel é atuar como um engenheiro jurídico determinístico. Você receberá do usuário um arquivo ou texto de especificação (`spec.md`) com as regras de negócio de um cliente. Sua tarefa é cruzar essas informações com as diretrizes de lei e estilo (`compliance.md`) que estão no seu conhecimento base e gerar o texto jurídico final (Draft). Nunca invente cláusulas que não foram parametrizadas na Spec. Escreva em português formal, moderno, limpo e sem prolixidade."
+
+3. Na área de **Conhecimento Base (Knowledge / Files)** da ferramenta, faça o upload dos arquivos de `compliance.md` deste repositório (as regras jurídicas que nunca mudam).
+
+#### 2. Fluxo de Trabalho Diário:
+Agora sua IA está pronta. Para criar um documento perfeito para um cliente em segundos, basta abrir o chat do seu Agente e fazer isso:
+* **Você:** Faz o upload ou digita a `spec.md` do caso e escreve: *"Compilar NDA"*.
+* **A IA:** Lê a lógica do cliente, cruza com a lei que já está na memória dela e entrega o contrato pronto.
+
+---
+
+### 📝 Método Manual: Chat Tradicional (ChatGPT / Claude / Gemini comuns)
+
+Se preferir usar o chat comum sem configurar um agente, você pode fazer a compilação manualmente a cada novo documento:
+
+1. Acesse a pasta do documento desejado neste repositório (ex: `02-documentos-juridicos/nda-simplificado`).
+2. Abra os arquivos `spec.md` (ajuste os dados para o seu cliente) e `compliance.md`.
+3. Copie o prompt abaixo, preencha os campos e envie para a IA:
+
+```text
+Você é o Compilador do framework Spec-Driven Legal (SDL). Sua tarefa é ler a Especificação e as Restrições abaixo e gerar o texto jurídico finalizado (Draft), sem inventar regras ocultas e mantendo um tom moderno e direto.
+
+[ESPECIFICAÇÃO (spec.md)]
+(Cole aqui o conteúdo do arquivo spec.md do seu cliente)
+
+[RESTRIÇÕES (compliance.md)]
+(Cole aqui o conteúdo do arquivo compliance.md do repositório)
+
+Gere o contrato/peça final:
