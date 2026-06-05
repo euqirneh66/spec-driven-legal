@@ -1,0 +1,72 @@
+[
+  {
+    "fase": 0,
+    "nome": "CAPTURA_FATOS",
+    "modelo": "flash",
+    "tipo_saida": "json",
+    "missao": "Extraia do input do cliente um JSON estruturado com: PARTES, OBJETO_PRINCIPAL, CONDICOES_FINANCEIRAS, PRAZOS, ANEXOS_CITADOS, GAPS_DE_INFORMAÇÃO."
+  },
+  {
+    "fase": 1,
+    "nome": "MAPEAMENTO_RISCOS",
+    "modelo": "flash",
+    "tipo_saida": "json",
+    "missao": "Analise o caso e liste vulnerabilidades do negócio em JSON: RISCO_INADIMPLEMENTO, RISCO_RESCISAO, DIRETRIZES_DE_MUTA_E_PENALIDADES."
+  },
+  {
+    "fase": 2,
+    "nome": "INVENTARIO_LEGAL",
+    "modelo": "flash",
+    "tipo_saida": "json",
+    "missao": "Identifique as restrições legislativas brasileiras aplicáveis. Retorne JSON: LEIS_IMPERATIVAS, JURISPRUDENCIA_STJ_STF, REQUISITOS_DE_VALIDADE."
+  },
+  {
+    "fase": 3,
+    "nome": "CONSTRUCAO_SPEC",
+    "modelo": "flash",
+    "tipo_saida": "texto",
+    "missao": "Crie o arquivo 'spec.md' em Markdown puro. Escreva a matriz lógica do contrato (Se acontecer X, a consequência é Y). Proibido juridiquês, foque em regras estruturadas."
+  },
+  {
+    "fase": 4,
+    "nome": "CONSTRUCAO_COMPLIANCE",
+    "modelo": "flash",
+    "tipo_saida": "texto",
+    "missao": "Crie o arquivo 'compliance.md' em Markdown puro. Liste os limites imperativos legais encontrados na fase 2 que este documento deve respeitar obrigatoriamente."
+  },
+  {
+    "fase": 5,
+    "nome": "ESTRESSE_CONTRATUAL",
+    "modelo": "flash",
+    "tipo_saida": "json",
+    "missao": "Simule 3 cenários de falha jurídica (ex: falência, quebra de sigilo). Retorne JSON com cenários, impactos na spec e sugestões de blindagem contratual."
+  },
+  {
+    "fase": 6,
+    "nome": "REFINAMENTO_LOGICO",
+    "modelo": "pro",
+    "tipo_saida": "json",
+    "missao": "Incorpore as melhorias dos cenários de estresse na lógica anterior. Retorne JSON indicando o mapa de alterações finais aplicadas na estrutura lógica."
+  },
+  {
+    "fase": 7,
+    "nome": "AUDITORIA_CRUCIALIDADE",
+    "modelo": "pro",
+    "tipo_saida": "json",
+    "missao": "Submeta a Spec ao teste de legalidade contra o Compliance. Avalie (0.0-1.0): LEGALIDADE, AUSENCIA_DE_ABUSIVIDADE, CLAREZA, PROTECAO_CONTRA_RISCOS. Retorne JSON com: SCORE_SEGURANCA (média), LIMIAR_APROVACAO (0.75), PASSOU (bool), ACAO (PROSSEGUIR ou VOLTAR_FASE_3), AJUSTES_NECESSARIOS (array)."
+  },
+  {
+    "fase": 8,
+    "nome": "LOCK_SPEC",
+    "modelo": "pro",
+    "tipo_saida": "json",
+    "missao": "Tranque a especificação. Retorne JSON consolidando as variáveis finais, confirmando que a lógica está blindada e pronta para compilação textual."
+  },
+  {
+    "fase": 9,
+    "nome": "DRAFT_COMPILATION",
+    "modelo": "pro",
+    "tipo_saida": "texto",
+    "missao": "Atue como o Compilador SDL. Traduza a spec.md e compliance.md validados na timeline em um instrumento jurídico completo em Markdown. Use linguagem formal moderna, clara, sem prolixidade ou clichês jurídicos arcaicos."
+  }
+]
