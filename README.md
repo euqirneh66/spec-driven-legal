@@ -35,18 +35,68 @@ Todo documento ou tese dentro deste repositório é construído com base em 3 pi
 Nós usamos o próprio SDL para criar os conteúdos explicativos deste repositório.
 
 ```text
-📦 spec-driven-legal
+📂 spec-driven-legal
  ┣ 📜 README.md                     <-- Você está aqui (O Manifesto)
- ┣ 📂 01-artigos                    <-- Artigos científicos e tutoriais
+ ┣ 📂 01-artigos                    <-- Fundamentos teóricos e científicos do método
  ┃ ┗ 📂 o-que-e-sdl
- ┃   ┣ 📜 spec.md                   <-- Lógica do artigo
- ┃   ┣ 📜 constraints.md            <-- Diretrizes de estilo e formato
- ┃   ┗ 📜 artigo-final.md           <-- O artigo compilado
- ┗ 📂 02-documentos-juridicos       <-- Modelos de documentos no padrão SDL
-   ┗ 📂 nda-simplificado
-     ┣ 📜 spec.md                   <-- Regras de negócio do NDA
-     ┣ 📜 compliance.md             <-- Limites legais e fundamentação
-     ┗ 📜 template.txt              <-- Template/Draft final do NDA
+ ┃   ┣ 📜 spec.md                   <-- Mapa lógico do artigo conceitual
+ ┃   ┣ 📜 constraints.md            <-- Restrições de estilo e tamanho
+ ┃   ┗ 📜 artigo-final.md           <-- O rascunho compilado final
+ ┣ 📂 02-documentos-juridicos       <-- Modelos estáticos no padrão SDL (Prontos para IA)
+ ┃ ┗ 📂 nda-simplificado
+ ┃   ┣ 📜 spec.md                   <-- Variáveis e regras de negócio do NDA
+ ┃   ┣ 📜 compliance.md             <-- Limites e restrições do Direito Brasileiro
+ ┃   ┣ 📜 prompt-compilador.txt     <-- Instrução de colagem para chats comuns
+ ┃   ┗ 📜 draft-exemplo.md          <-- O contrato final resultante
+ ┗ 📂 03-motor-sdl                  <-- MOTOR AUTÔNOMO (Pipeline em Python)
+   ┣ 📜 app_sdl.py                  <-- Aplicação com interface gráfica em Gradio
+   ┣ 📜 protocolo_sdl_contratos.json <-- Arquivo de configuração das 10 fases da IA
+   ┗ 📜 requirements.txt            <-- Dependências de instalação do sistema
+```
+---
+
+## 🛠️ Como Utilizar o SDL?
+
+Você pode adotar o framework em três níveis diferentes de profundidade, dependendo da sua estrutura tecnológica:
+
+### Nível 1: Modo Agente (Claude Projects, Gemini Gems ou Custom GPTs)
+A forma mais elegante de usar o SDL no dia a dia sem programar:
+1. Crie uma IA dedicada (Gems, Projects ou GPTs) e chame-a de **Compilador SDL**.
+2. Nas **Instruções de Sistema**, cole: 
+   > *"Você é o Compilador SDL. Seu papel é receber arquivos de especificação (`spec.md`) com as regras de negócio de um cliente, cruzá-los com as diretrizes de lei (`compliance.md`) que estão no seu conhecimento base e gerar o texto jurídico final (Draft) em formato Markdown. Seja estritamente determinístico, sem inventar regras e sem usar termos prolixos."*
+3. Faça o upload dos arquivos `compliance.md` deste repositório na base de conhecimento da IA.
+4. No dia a dia, apenas envie a `spec.md` do seu novo cliente e digite: *"Compilar contrato"*.
+
+### Nível 2: Modo Manual (Chat Comum do ChatGPT / Claude)
+Caso queira usar o chat tradicional, acesse a pasta do documento desejado (ex: `02-documentos-juridicos/nda-simplificado`), abra o arquivo `prompt-compilador.txt`, copie a instrução mestre, cole a sua `spec` adaptada e envie para a IA.
+
+### Nível 3: O Motor Autônomo (Pipeline de 10 Fases em Python)
+Se você busca automação em escala e auditoria de risco com loops de feedback, utilize o nosso script em Python localizado em `03-motor-sdl`. 
+
+O motor executa uma esteira de **10 fases sequenciais**, utilizando modelos rápidos (`gemini-2.0-flash`) para estruturação de dados e modelos profundos (`gemini-1.5-pro`) para escrita e julgamento crítico.
+
+```
+Fatos Brutos ➔ Extração ➔ Criação da Spec ➔ Teste de Abusividade (Fase 7)
+                                ▲                   │
+                                └───── [Se Reprovar]┘
+                                        │ [Se Passar]
+                                        ▼
+                                 Draft Final (.md)
+```
+
+#### Como rodar o motor localmente:
+```bash
+# Entre na pasta do motor
+cd 03-motor-sdl
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Configure sua chave de API do Gemini
+export GOOGLE_API_KEY="sua_chave_aqui"
+
+# Execute a aplicação
+python app_sdl.py
 ```
 
 ---
