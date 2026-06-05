@@ -1,0 +1,9 @@
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos de configuração local criados pelo app
+protocolo_sdl_contratos.json.bak
+
+# Ocultar chaves de API caso o usuário salve direto no arquivo por engano
+*.env
